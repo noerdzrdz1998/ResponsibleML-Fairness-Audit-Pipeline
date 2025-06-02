@@ -29,7 +29,7 @@ Each directory is completely self‑contained: its own Docker image, requirement
 ## 1 · Baseline (accuracy‑only) run
 
 ```bash
-cd Biased_Models
+cd "Biased Models"
 
 # build
 docker build -t adult_bias_benchmark .
@@ -61,7 +61,7 @@ The benchmark tunes 14 classifiers with nested Optuna TPE (5×3 CV) and audits
 ## 2 · Fairness‑aware run (Equalised Odds constraint)
 
 ```bash
-cd Fair_Machine_Learning_Models
+cd "Fair Machine Learning Models"
 
 # build
 docker build -t adult_bias_fair .
